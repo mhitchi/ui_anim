@@ -1,9 +1,9 @@
 
-function rotateIcon() {
-  //icon rotation on hover
-  var icon = document.getElementById("play"); 
-  icon.classList.add('rotate');
-}
+// function rotateIcon() {
+//   //icon rotation on hover
+//   var icon = document.getElementById("play"); 
+//   icon.classList.add('rotate');
+// }
 
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -13,6 +13,9 @@ for (i = 0; i < acc.length; i++) {
     /* Toggle between adding and removing the "active" class,
     to highlight the button that controls the panel */
     this.classList.toggle("active");
+    //icon rotation on hover
+    var icon = document.getElementById("play"); 
+    icon.classList.add('rotate');
 
     /* Toggle between hiding and showing the active panel */
     var panel = this.nextElementSibling;
