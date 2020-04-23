@@ -18,11 +18,13 @@ for (i = 0; i < acc.length; i++) {
     icon.classList.add('rotate');
 
     /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
+    var panel = this.lastElementChild;
     if (panel.style.display === "block") {
       panel.style.display = "none";
     } else {
       panel.style.display = "block";
+      icon.classList.remove('rotate');
+      icon.classList.add('rotate-reverse');
     }
   });
 }
