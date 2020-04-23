@@ -14,7 +14,9 @@ for (i = 0; i < acc.length; i++) {
     to highlight the button that controls the panel */
     this.classList.toggle("active");
     //icon rotation on hover
-    var icon = document.getElementById("play"); 
+    // var icon = document.getElementById("play"); 
+    // icon.classList.add('rotate');
+    var icon = this.firstElementChild;
     icon.classList.add('rotate');
 
     /* Toggle between hiding and showing the active panel */
@@ -24,7 +26,7 @@ for (i = 0; i < acc.length; i++) {
     } else {
       panel.style.display = "block";
       icon.classList.remove('rotate');
-      icon.classList.add('rotate-reverse');
+      // icon.classList.add('rotate-reverse');
     }
   });
 }
